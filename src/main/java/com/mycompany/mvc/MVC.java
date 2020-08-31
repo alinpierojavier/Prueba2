@@ -1,10 +1,12 @@
 
 package com.mycompany.mvc;
+
 import Controller.Controlador;
 import model.Modelo;
 import view.Vista;
 
 public class MVC {
+    
     public static void main(String args[]){
         //Aquí llamamos
         Modelo mod = new Modelo();
@@ -14,4 +16,5 @@ public class MVC {
         control.iniciar();
         view.setVisible(true);       
     }
+    
 }

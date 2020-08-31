@@ -1,4 +1,3 @@
-
 package Controller;
 import model.Modelo;
 import view.Vista;
@@ -15,6 +14,7 @@ public class Controlador implements ActionListener {
     private Vista view;
     private Modelo model;
     
+    
     //creamos el contructor público, mismo nombre de la clase.
     //recibirá 2 parámetros como vista de View y modelo de Model.
     public Controlador(Vista view, Modelo model){
@@ -27,6 +27,7 @@ public class Controlador implements ActionListener {
         view.setTitle("MVC Multiplicar");
         view.setLocationRelativeTo(null);
     }
+    
     //@Override
     public void actionPerformed(ActionEvent e) {
         model.setNum1(Integer.parseInt(view.Txt1.getText()));
@@ -34,4 +35,6 @@ public class Controlador implements ActionListener {
         model.multiplicar();
         view.TxtResultado.setText(String.valueOf( model.getResultado()));
     }
+    
 }
+

@@ -25,7 +25,6 @@ public class Modelo {
     public int getResultado() {
         return Resultado;
     }
-
     public void setResultado(int Resultado) {
         this.Resultado = Resultado;
     }
@@ -34,7 +33,8 @@ public class Modelo {
     //Pero no va recibir ningun parámetro porque vamos tomarlo de las propiedades.
     public int multiplicar()
     {
-        this.Resultado=this.num1*this.num2;
+        
+        this.Resultado = this.num1*this.num2;
         return this.Resultado;
     }
 }
