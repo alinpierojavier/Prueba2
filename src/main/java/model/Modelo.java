@@ -32,7 +32,6 @@ public class Modelo {
     
     //GENERAMOS UN MÉTODO de multiplicar PARA LA  tipo publico
     //Pero no va recibir ningun parámetro porque vamos tomarlo de las propiedades.
-    
     public int multiplicar()
     {
         this.Resultado=this.num1*this.num2;
